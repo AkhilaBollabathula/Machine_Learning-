@@ -1,0 +1,39 @@
+**Exploring Advertising Expenditure and Sales: A Linear Regression Analysis**
+
+**Introduction:**
+This report analyzes the correlation between advertising spending and sales, employing a linear regression model for prediction and evaluation.Insights from this analysis 
+can guide marketing strategies for optimizing advertising budgets.
+
+** Data Loading and Exploration:**
+- Imported necessary libraries like Pandas, NumPy, Matplotlib, and Seaborn.
+- Loaded the dataset "Advertising.csv" into a DataFrame `df`.
+- Displayed the first few rows of the DataFrame using `df.head()`.
+- Obtained statistical information about the DataFrame using `df.describe()` and `df.info()`.
+- Checked for missing values using `df.isnull().sum()`.
+- Examined the shape of the DataFrame using `df.shape`.
+
+** Data Visualization:**
+- Created a 3D scatter plot to visualize the relationship between TV advertising, Radio advertising, and Sales.
+- Generated a 2D scatter plot to visualize the relationship between TV advertising and Sales using Seaborn.
+
+** Data Preparation:**
+- Extracted feature variables (`x`) and target variable (`y`) from the DataFrame.
+- Split the data into training and testing sets using `train_test_split()` from Scikit-learn.
+
+** Model Building:**
+- Utilized Linear Regression from Scikit-learn to build the regression model.
+- Trained the model using the training data (`x_train` and `y_train`).
+
+** Model Evaluation:**
+- Evaluated the model's performance using the test data (`x_test` and `y_test`) with the `score()` method.
+- Obtained the coefficients and intercept of the regression model using `reg.coef_` and `reg.intercept_`.
+- Predicted the target variable (`Sales`) using the test features (`x_test`) and stored the predictions in `y_pred`.
+- Created a DataFrame `df1` to compare actual and predicted Sales values.
+
+** Visualization of Model Performance:**
+- Constructed a 3D scatter plot to visualize the actual and predicted Sales values for both training and testing data.
+
+**Conclusion:**
+- The Linear Regression model achieved a certain score on the test data, indicating its predictive capability.
+- Visualization aids in understanding the relationship between advertising expenditures (TV and Radio) and Sales.
+- Further analysis and fine-tuning of the model might be required for better predictive accuracy.
